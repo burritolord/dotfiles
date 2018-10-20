@@ -1,0 +1,8 @@
+[user]
+	email = thenickjames@gmail.com
+	name = Nick James
+[alias]
+	st = status
+	co = checkout
+	ct = commit
+	br = branch
