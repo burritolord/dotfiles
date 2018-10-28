@@ -5,6 +5,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Source FZF files
+if [ -f /usr/share/fzf/key-bindings.bash ]; then
+  . /usr/share/fzf/key-bindings.bash
+fi
+
+if [ -f /usr/share/fzf/completion.bash ]; then
+  . /usr/share/fzf/completion.bash
+fi
+
 # Bash completion with sudo
 complete -cf sudo
 
