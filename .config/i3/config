@@ -196,5 +196,10 @@ exec_always --no-startup-id feh --bg-scale /home/zesty/Pictures/wallpapers/graff
 # Temp solution to set low batter notification
 exec_always --no-startup-id cbatticon -l 15
 
+# Autostart programs
+exec_always --no-startup-id nm-applet
+exec_always --no-startup-id blueman-applet
+exec_always --no-startup-id pasystray
+
 # Launch programs
 bindsym $mod+c exec --no-startup-id chromium
