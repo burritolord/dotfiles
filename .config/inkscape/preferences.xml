@@ -132,10 +132,10 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="8355.98"
-         height="9729.79"
+         width="260.215"
+         height="216.375"
          rx="0"
-         ry="42.8571" />
+         ry="0" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -170,15 +170,19 @@
          style="fill:red;"
          end="0"
          start="0"
-         usecurrent="1" />
+         usecurrent="1"
+         rx="77.2957"
+         ry="13.6238"
+         open="0" />
       <eventcontext
          id="star"
-         magnitude="5"
+         magnitude="3"
          style="fill:yellow;"
          usecurrent="1"
-         proportion="0.5"
+         proportion="0.14"
          rounded="0"
-         randomized="0" />
+         randomized="0"
+         isflatsided="1" />
       <eventcontext
          id="spiral"
          style="fill:none;stroke:black"
@@ -202,17 +206,18 @@
          mode="drag"
          selcue="1"
          style="stroke-width:1px;"
-         usecurrent="0" />
+         usecurrent="0"
+         freehand-mode="0" />
     </group>
     <eventcontext
        id="calligraphic"
        style="fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;"
        mass="2"
-       angle="30"
-       width="15"
-       thinning="10"
+       angle="0"
+       width="12.7857"
+       thinning="0"
        flatness="90"
-       cap_rounding="0"
+       cap_rounding="0.3"
        usecurrent="1"
        tracebackground="0"
        usepressure="1"
@@ -324,7 +329,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="mm"
+       unit="px"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -335,8 +340,8 @@
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:bold;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'sans-serif, Bold';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
        selcue="1">
       <group
-         id="lineheight"
-         display_unit="0" />
+         display_unit="0"
+         id="lineheight" />
     </eventcontext>
     <eventcontext
        id="nodes"
@@ -388,7 +393,9 @@
        offset="100" />
     <eventcontext
        id="gradient"
-       selcue="1" />
+       selcue="1"
+       newgradient="1"
+       newfillorstroke="0" />
     <eventcontext
        id="mesh"
        selcue="1"
@@ -422,12 +429,12 @@
        offset="0"
        offsetunits="mm" />
     <group
-       id="measure"
-       fontsize="10"
-       precision="2"
-       scale="100"
+       unit="px"
        offset="5"
-       unit="mm" />
+       scale="100"
+       precision="2"
+       fontsize="10"
+       id="measure" />
   </group>
   <group
      id="palette">
@@ -548,7 +555,7 @@
   </group>
   <group
      id="colorselector"
-     page="0" />
+     page="3" />
   <group
      id="embedded">
     <group
@@ -574,8 +581,8 @@
        page="0"
        x="0"
        y="0"
-       w="394"
-       h="493"
+       w="934"
+       h="687"
        visible="1"
        state="2"
        placement="5" />
@@ -590,8 +597,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="394"
-       h="493"
+       w="934"
+       h="687"
        visible="1"
        state="2"
        placement="5" />
@@ -605,16 +612,28 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       align-to="1"
+       align-to="0"
        x="0"
        y="0"
-       w="394"
-       h="493"
+       w="934"
+       h="687"
        visible="1"
        state="2"
        placement="5" />
     <group
-       id="xml" />
+       id="xml"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="0"
+       y="0"
+       w="711"
+       h="266"
+       visible="0"
+       state="2"
+       placement="1" />
     <group
        id="find"
        panel_size="1"
@@ -624,8 +643,11 @@
        panel_border="0"
        x="0"
        y="0"
-       w="427"
-       h="264" />
+       w="934"
+       h="687"
+       visible="1"
+       state="2"
+       placement="5" />
     <group
        id="spellcheck"
        w="200"
@@ -634,21 +656,31 @@
        ignorenumbers="1" />
     <group
        id="documentoptions"
-       state="1"
+       state="2"
        panel_size="1"
        panel_ratio="100"
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="1563"
-       y="1042"
-       w="711"
-       h="689"
-       visible="0"
-       placement="1" />
+       x="0"
+       y="0"
+       w="934"
+       h="687"
+       visible="1"
+       placement="5" />
     <group
        id="preferences"
-       state="1" />
+       state="1"
+       page="1"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="673"
+       y="390"
+       w="573"
+       h="299" />
     <group
        id="gradienteditor" />
     <group
@@ -660,8 +692,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="394"
-       h="493"
+       w="934"
+       h="687"
        visible="1"
        state="2"
        placement="5" />
@@ -677,8 +709,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="394"
-       h="493"
+       w="934"
+       h="687"
        visible="1"
        state="2"
        placement="5">
@@ -687,14 +719,14 @@
          value="page" />
       <group
          id="defaultxdpi"
-         value="300" />
+         value="300.433" />
     </group>
     <group
        id="save_as"
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/zesty/Merch/Designs/SVGFiles/AmazonMerch"
+       path="/home/zesty/Pictures"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -705,11 +737,11 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/zesty/Merch/Designs/SVGFiles/AmazonMerch/" />
+       path="/home/zesty/Projects/lost_cities/react2/src/images/" />
     <group
        id="import"
        enable_preview="1"
-       path="/home/zesty/Merch/Designs/SVGFiles/"
+       path="/home/zesty/Projects/nickjamesio_blog/ghost/content/images/2019/04/"
        ask="1"
        link="embed"
        scale="auto"
@@ -760,8 +792,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="394"
-       h="493"
+       w="934"
+       h="687"
        visible="1"
        state="2"
        placement="5" />
@@ -783,6 +815,20 @@
        on-focus="1.0"
        on-blur="0.50"
        animate-time="100" />
+    <group
+       id="livepatheffect"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="0"
+       y="0"
+       w="934"
+       h="687"
+       visible="1"
+       state="2"
+       placement="5" />
   </group>
   <group
      id="printing">
@@ -793,7 +839,9 @@
        add-label-comments="0" />
   </group>
   <group
-     id="options">
+     id="options"
+     dpifixbackup="1"
+     dpiupdatemethod="0">
     <group
        id="renderingcache"
        size="64" />
@@ -826,7 +874,7 @@
        value="12" />
     <group
        id="cursortolerance"
-       value="8.0" />
+       value="8" />
     <group
        id="dragtolerance"
        value="4.0" />
@@ -1000,6 +1048,7 @@
        masks="65535" />
     <group
        id="svgoutput"
+       disable_optimizations="0"
        usenamedcolors="0"
        numericprecision="8"
        minimumexponent="-8"
@@ -1069,10 +1118,13 @@
        id="rendering" />
   </group>
   <group
-     id="extensions" />
+     id="extensions"
+     org.inkscape.print.eps.cairo.PSlevel="PS3"
+     org.inkscape.print.eps.cairo.resolution="96"
+     org.inkscape.print.eps.cairo.bleed="0" />
   <group
      id="desktop"
-     style="line-height:1.25;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-opacity:1;-inkscape-font-specification:'Old English Five, Normal';font-family:'Old English Five';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:376.14664714px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">
+     style="line-height:1.25;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1;-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:11.73746618px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none">
     <group
        width="2554"
        height="1390"
