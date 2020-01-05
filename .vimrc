@@ -9,3 +9,4 @@ set autoindent
 set showcmd
 set showmode
 set whichwrap=b,s,<,>,[,]
+au BufNewFile,BufRead /*.rasi setf css

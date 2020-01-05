@@ -11,9 +11,18 @@
 
 set $mod Mod4
 
+# Colors for system
+#set $bg-color		  #801336
+#set $inactive-bg-color	  #2d132c
+set $bg-color		  #801336
+set $inactive-bg-color	  #2f343f
+set $text-color		  #FFFFFF
+set $inactive-text-color  #888888
+set $urgent-bg-color	  #E53935
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:System San Francisco Display 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -36,8 +45,9 @@ bindsym $mod+Return exec --no-startup-id lxterminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+# start a program launcher
+# bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec rofi -show run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -95,8 +105,8 @@ bindsym $mod+z focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Chrome"
-set $ws2 "2: VSCode"
+set $ws1 "1: Browser"
+set $ws2 "2: Code"
 set $ws3 "3: Terminals"
 set $ws4 "4"
 set $ws5 "5"
@@ -137,6 +147,9 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+
+assign [class="Chromium"] $ws1
+assign [class="code-oss"] $ws2
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -191,15 +204,26 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase s
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
 
 # Set wallpaper
-exec_always --no-startup-id feh --bg-scale /home/zesty/Pictures/wallpapers/graffiti.jpg
-
-# Temp solution to set low batter notification
-exec_always --no-startup-id cbatticon -l 15
+exec_always --no-startup-id feh --bg-fill /home/zesty/Pictures/wallpapers/space2.jpg
 
 # Autostart programs
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id blueman-applet
-exec_always --no-startup-id pasystray
+exec --no-startup-id pasystray
+exec --no-startup-id cbatticon -l 15
+# exec --no-startup-id compton
 
 # Launch programs
 bindsym $mod+c exec --no-startup-id chromium
+
+# Borders
+default_border pixel 2
+hide_edge_borders smart
+
+
+# Window colors
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #c72c41
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #c72c41
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #c72c41
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #c72c41
